@@ -32,9 +32,13 @@ class Log:
             print(Back.YELLOW, Fore.BLACK, "Fatal-->", Style.RESET_ALL, f"In:{self.name}", Back.YELLOW, Fore.BLACK, content, Style.RESET_ALL)
             exit()
 
+''' 
+USAGE:
+
 logger = Log(NOTIFS=True, MESSAGE=True, WARNINGS=True, CRITICAL=True, FATAL=True, SCRIPT="'Test script'")
 logger.note("This is a development note")
 logger.message("This is a message for the user!")
 logger.warning("This is a non-critical warning!")
 logger.critical("Something bad happened! This is a critical warning!")
 logger.fatal("Something very bad happened, after this fatal note the program will stop!")
+'''
